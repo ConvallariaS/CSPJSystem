@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="welcomebgp" style="background-image: url('https://background-images-1255871272.cos.ap-chengdu.myqcloud.com/guide.jpg'); -webkit-background-size: cover"> 
+    <view catchtap="onTapJump" class="journey-container">
+      <text class="journey">开启小程序之旅</text>
+    </view>
+    <view class="welcome-footer">
+      <view class="welcome-footer__links">CSPJSystem</view>
+      <view class="welcome-footer__text">Copyright © 2018 YameiSong.</view>
+      <view class="welcome-footer__text">All Rights Reserved.</view>
+    </view>
+  </view>
+</view>

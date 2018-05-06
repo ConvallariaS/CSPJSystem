@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<import src="job-item/job-item-tpl.wxml"/>
+<import src="../wxSearch/wxSearch.wxml" />
+<view class="container">
+  <view class="index-top" style="background-image: url('https://background-images-1255871272.coscd.myqcloud.com/yumao.jpg'); background-size: cover;" />
+  
+  <scroll-view class="page_body" scroll-y="true" bindscrolltolower="toLoadMore" bindscrolltoupper="toRefesh" bindscroll="scroll">
+
+  <!--search-->
+    <view class="search">
+      <view class="searchbar">
+        <view class="searchbar_form">
+          <view class="searchbar_box">
+            <icon class="searchicon" size="16" type="search" bindtap="wxSearchFn"></icon>
+            <input class="searchinput" placeholder="搜索" value="{{wxSearchData.value}}" bindfocus="wxSearchFocus" focus="{{inputShowed}}" bindinput="wxSearchInput" bindblur="wxSearchBlur"></input>
+            <view class="clearicon"  bindtap="clearInput">
+              <icon type="clear" size="16" />
+            </view>
+          </view>
+          <label class="searchbar_lable" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="16"></icon>
+            <view class="weui-search-bar_text">搜索</view>
+          </label>
+        </view>
+        <view class="searchbar_cancelbtn" bindtap="wxSearchFn" hidden="{{!inputShowed}}">搜索</view>
+      </view>
+      <template is="wxSearch" data="{{wxSearchData}}" />
+    </view>
+  <!--list-->
+    <view class="information">
+      <block wx:for="{{jobList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+        <view bindtap="navigateToDetail" data-job-id="{{item.jobId}}">
+          <template is="jobItemTpl" data="{{...item}}"/>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view>
+    <loading hidden="{{hidden}}" bindchange="loadingChange">加载中</loading>
+  </view>
+</view>
+

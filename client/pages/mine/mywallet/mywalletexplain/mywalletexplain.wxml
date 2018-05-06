@@ -1,0 +1,11 @@
+<!--pages/mine/mywallet/mywalletexplain/mywalletexplain.wxml-->
+<view class="container">
+  <view class="explainbgp" style="background-image: url('https://background-images-1255871272.coscd.myqcloud.com/shuomingbgp.jpg'); -webkit-background-size: cover">
+    <text>关于提现的问题？\n</text>
+    <text>1、支持银行卡提现和支付宝提现\n</text>
+    <text>2、每次提现金额要高于5元\n</text>
+    <text>3、提现款额会在2个工作日内到账\n</text>
+    <text>\n谢谢您的使用^-^</text>
+  </view>
+  
+</view>

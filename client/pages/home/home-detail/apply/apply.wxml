@@ -1,0 +1,40 @@
+<!--pages/index/index-detail/apply/apply.wxml-->
+<view class="container">
+  <view class="entryform-panel">
+    <view class="tishi">
+      <text>正规兼职不会收取费用，若收费请提高警惕</text>
+    </view>
+    <view class="apply-block">
+      <view class="apply-title">确定工作要求</view>
+      <view class="apply-content">18-45岁</view>
+    </view>
+    <view class="apply-block">
+      <view class="apply-title">选择上班时间</view>
+        <view class="apply-content">
+          <view>
+            <view class="apply-radio-group" wx:for="{{workday}}" wx:for-item="worktime" wx:key="">
+              <text class="radio-text">{{worktime.name}}</text>
+              <icon wx:if="{{worktime.isSelect}}" type="success" size="16" bindtap="selectTimeOk" data-index="{{index}}" />
+              <icon wx:else type="circle" size="16" bindtap="selectTimeOk" data-index="{{index}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="apply-block">
+        <view class="apply-title">选择工作地点</view>
+        <view class="apply-content">
+          <view >
+            <view class="apply-radio-group" wx:for="{{addr}}" wx:for-item="addritem" wx:key="">
+              <text class="radio-text" >{{addritem.name}}</text>
+              <icon wx:if="{{addritem.selected}}" type="success" size="16" bindtap="selectAddrOk" data-index="{{index}}" />
+              <icon wx:else type="circle" size="16" bindtap="selectAddrOk" data-index="{{index}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="applybtn">
+        <button class="cancelbtn" bindtap="goBack">取消</button>
+        <button class="applybtn" bindtap="showOk">极速报名</button>
+      </view>
+  </view>
+</view>

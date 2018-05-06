@@ -1,0 +1,6 @@
+/* pages/mine/mywallet/withdrawal/withdrawal.wxss */
+.withdrawal{
+  width: 100%;
+  height: 1200rpx;
+  font-size: 42rpx;
+}

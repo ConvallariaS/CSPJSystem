@@ -1,0 +1,112 @@
+/**index.wxss**/
+@import "job-item/job-item-tpl.wxss";
+@import "../wxSearch/wxSearch.wxss";
+
+.index-top{
+  width: 100%;
+  height: 300rpx;
+}
+.search{
+  width: 100%;
+  background: #a6eafd;
+}
+.searchbar{
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
+}
+.searchbar_form{
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5rpx;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+.searchbar_box{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.searchicon{
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.searchinput{
+  height: 28px;
+  line-height: 28px;
+  font-size: 26rpx;
+}
+.clearicon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.searchbar_lable{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #a6eafd;
+  line-height: 28px;
+}
+.searchbtn{
+  width: 180rpx;
+  min-height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #a6eafd;
+}
+.weui-icon-search{
+  margin-right: 8px;
+  font-size: inherit;
+}
+.weui-search-bar_text{
+  display: inline-block;
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+.searchbar_cancelbtn{
+  margin-left: 10px;
+  line-height: 28px;
+  color: #09bb07;
+  white-space: nowrap;
+}
+.clear-search-log{
+  text-align: center;
+}
+.search-log{
+  border: 1rpx solid #eee !important;
+  display: inline-block !important;
+  margin-top: 5rpx !important;
+  margin-left: 10rpx !important;
+  border-radius: 5rpx;
+  padding-left: 14rpx;
+  padding-right: 14rpx;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+}
+.information{
+  width: 100%;
+}
+

@@ -1,0 +1,8 @@
+<!--pages/mine/mywallet/withdrawal/withdrawal.wxml-->
+<view class="container">
+  <view class="withdrawal" style="background-image: url('https://background-images-1255871272.cos.ap-chengdu.myqcloud.com/tixianbgp.jpg'); -webkit-background-size: cover">
+    <text>由于功能限制\n</text>
+    <text>未能实现提现功能\n</text>
+    <text>请见谅</text>
+  </view>
+</view>

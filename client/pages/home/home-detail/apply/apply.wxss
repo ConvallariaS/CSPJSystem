@@ -1,0 +1,71 @@
+/* pages/index/index-detail/apply/apply.wxss */
+.entryform-panel{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tishi{
+  margin-bottom: 10rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.tishi text{
+  padding: 6rpx 16rpx;
+  border: 3rpx solid #a6ebff;
+  line-height: 1;
+  color: #1296db;
+  font-size: 36rpx;
+  border-radius: 4rpx;
+  margin-bottom: 10rpx;
+  white-space: nowrap;
+}
+.apply-block{
+  padding: 20rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+}
+.apply-title{
+  font-size: 40rpx;
+}
+.apply-title::before{
+  content: '';
+	display: inline-block;
+	vertical-align: -6rpx;
+	width: 6rpx;
+	height: 40rpx;
+	background: #07fb42;
+	margin-right: 8rpx;
+}
+.apply-content{
+  font-size: 32rpx;
+  text-indent: 2em;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.apply-radio-group{
+  padding-bottom: 10rpx;
+  width: 100%;
+  line-height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.radio-text{
+  width: 600rpx;
+}
+.applybtn{
+  display: flex;
+  flex-direction: row;
+  border-top: 5rpx solid #eee;
+}
+.cancelbtn{
+  flex: 0 0 50%;
+  background: #fff;
+}
+.applybtn{
+  flex: 0 0 50%;
+  background: #a6eafd;
+}

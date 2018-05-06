@@ -1,0 +1,49 @@
+/**app.wxss**/
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: '微软雅黑';
+} 
+/*输入*/
+input{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-family: inherit;
+}
+.input-list{
+  padding: 0 20rpx;
+  margin: 20rpx 0;
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+.input-item{
+  padding: 20rpx;
+  line-height: 2;
+  display: flex;
+  font-size: 36rpx;
+  border-top: 1rpx solid #e8e8e8;
+}
+.input-item-label{
+  display: block;
+  width: 5em;
+  color: #666;
+}
+.input-item-content{
+  color: #333;
+  flex: 1;
+  font-size: 32rpx;
+}
+/*滚动条*/
+.page_body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

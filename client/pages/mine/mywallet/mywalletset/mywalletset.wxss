@@ -1,0 +1,65 @@
+/* pages/mine/mywallet/mywalletset/mywalletset.wxss */
+.walletset{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.item1{
+  width: 280rpx;
+  min-height: 60rpx;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 30rpx;
+}
+.item2{
+  width: 280rpx;
+  min-height: 60rpx;
+  border-radius: 5px;
+  text-align: center;
+}
+.green{
+  background-color: #a6eafd;
+  color: #ffffff;
+}
+.bankcard_info{
+  width: 100%;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #31a35a;
+  border-top: 2rpx solid #31a35a;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.alipay_info{
+  width: 100%;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #1167ae;
+  border-top: 2rpx solid #1167ae;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.flag1{
+  flex: 0 0 10%;
+  padding-left: 10rpx;
+  color: #31a35a;
+  margin-left: 20rpx;
+}
+.flag2{
+  flex: 0 0 10%;
+  padding-left: 10rpx;
+  color: #1167ae;
+  margin-left: 20rpx;
+}
+.cardname{
+  flex: 0 0 20%;
+  text-align: center;
+}
+.cardnum{
+  flex: 0 0 70%;
+  text-align: center;
+}

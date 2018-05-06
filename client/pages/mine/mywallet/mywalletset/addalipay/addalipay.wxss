@@ -1,0 +1,5 @@
+/* pages/mine/mywallet/mywalletset/addalipay/addalipay.wxss */
+.alipaybtn{
+  width: 240rpx;
+  background-color: #a6eafd;
+}

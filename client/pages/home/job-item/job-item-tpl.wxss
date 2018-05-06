@@ -1,0 +1,49 @@
+.info_items{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx;
+  border-bottom: 1px solid #ddd;
+}
+.title_info{
+  display: flex;
+  flex-direction: row;
+}
+.info_title{
+  flex: 0 0 70%;
+  font-size: 42rpx;
+  color: #000000;
+}
+.info_price{
+  flex: 0 0 30%;
+  font-size: 40rpx;
+  color: #f83429;
+}
+.basic_info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.info_addr{
+  flex: 0 0 25%;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.image_addr{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 5rpx;
+  vertical-align: text-bottom;
+}
+.info_time{
+  flex: 0 0 75%;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.image_time{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 5rpx;
+  vertical-align: text-bottom;
+}

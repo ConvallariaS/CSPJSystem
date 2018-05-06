@@ -1,0 +1,43 @@
+/* pages/mine/mywallet/mywalletset/addbankcard/addbankcard.wxss */
+.warninfo{
+  padding: 30rpx;
+  font-size: 26rpx;
+  color: #0000dd;
+}
+.code-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 88rpx;
+}
+.code-box input{
+  border: 0;
+  flex: 1;
+}
+.code-box button{
+  border: 1px #a6eafd solid;
+  color: #a7efff;
+  border-radius: 99px;
+  background-color: transparent!important;
+  margin: 15rpx 20rpx 15rpx 0;
+  font-size: 22rpx;
+  text-align: center;
+  height: 58rpx;
+  width: 220rpx;
+}
+.code-box button[disabled]{
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.btncode{
+  width: 200rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  background-color: #a6eafd;
+}
+.cardbtn{
+  background-color: #a6eafd;
+}

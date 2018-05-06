@@ -1,0 +1,60 @@
+/* pages/mine/mine.wxss */
+#header{
+  width: 100%;
+  height: 240px;
+  color: #000;
+}
+#header .content{
+  padding-top: 60px;
+  text-align: center;
+}
+#header .content image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+#header .content .nickname{
+    padding-top:20px;
+}
+#header .content .orther{
+    padding-top:10px;
+    font-size:15px;
+}
+.textinfo1{
+  margin-top: 50rpx;
+  margin-left: 50rpx;
+  font-size: 42rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.textinfo2{
+  margin-left: 50rpx;
+  font-size: 42rpx;
+}
+
+.list{
+  width: 100%;
+  border-top: 1rpx solid #ddd;
+}
+
+.my-item{
+  width: 100%;
+  min-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 42rpx;
+}
+
+.image1{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+	
+}
+.you{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 420rpx;
+}

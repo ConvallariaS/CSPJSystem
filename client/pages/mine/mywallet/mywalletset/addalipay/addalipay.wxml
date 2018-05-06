@@ -1,0 +1,23 @@
+<!--pages/mine/mywallet/mywalletset/addalipay/addalipay.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="input-list">
+      <view class="input-item">
+        <text class="input-item-label">账号</text>
+        <view class="input-item-content">
+          <input placeholder="支付宝账号" type="number" value="{{alipayphone}}" maxlength="11" bindchange="updateAlipayPhone" name="alipayphone1"></input>
+        </view>
+      </view>
+      <view class="input-item">
+        <text class="input-item-label">姓名</text>
+        <view class="input-item-content">
+          <input type="text" value="{{alipayname}}" bindchange="updateAlipayName" placeholder="姓名" name="alipayname1"></input>
+        </view>
+      </view>
+    </view>
+    <view>
+      <button class="alipaybtn" form-type="submit" hover-class="none"type="primary">确认</button>
+    </view>
+  </form>
+</view>
+

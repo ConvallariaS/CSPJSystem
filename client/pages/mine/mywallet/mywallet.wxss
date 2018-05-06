@@ -1,0 +1,52 @@
+/* pages/mine/mywallet/mywallet.wxss */
+.money{
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 42rpx;
+  background-color: #a6eafd;
+}
+.btnset{
+  width: 250rpx;
+  height: 120rpx;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.green{
+  background-color: #fff;
+  color: #038d42;
+  border: solid 1rpx #04661b;
+}
+
+.walletinfo{
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.item{
+  width: 100%;
+  height: 100rpx;
+  font-size: 42rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+}
+.you{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 500rpx;
+}
+.itemtext{
+  margin-left: 20rpx;
+}
+.press{
+  background-color: #dbdbdb;
+  opacity: 0.7;
+}

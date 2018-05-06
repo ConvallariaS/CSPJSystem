@@ -1,0 +1,89 @@
+/* details.wxss */
+.container-body{
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.detail-content{
+  background: #f9f9f9;
+}
+.detail-title{
+  font-size: 44rpx;
+  line-height: 2;
+}
+.detail-block-content .detail-list{
+  overflow: hidden;
+}
+.detail-item{
+  display: flex;
+  font-size: 32rpx;
+  color: #555;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.detail-block-content .detail-list .detail-item{
+	width: 50%;
+	float: left;
+}
+.detail-item .text-left{
+  white-space: nowrap;
+}
+.detail-item .text-right{
+  color: #777;
+}
+.detail-item .text-red{
+  font-size: 40rpx;
+  color: #f83429;
+  line-height: 1;
+}
+.detail-top, .detail-block{
+  padding: 20rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+  
+}
+.detail-block{
+  border-top: 1rpx solid #ddd;
+}
+.detail-block-title{
+  font-size: 40rpx;
+}
+.detail-block-title:before{
+	content: '';
+	display: inline-block;
+	vertical-align: -6rpx;
+	width: 6rpx;
+	height: 40rpx;
+	background: #07fb42;
+	margin-right: 8rpx;
+}
+.detail-block-content .detail-list{
+  overflow: hidden;
+}
+.detail-description{
+  font-size: 30rpx;
+  text-indent: 2em;
+  margin-top: 20rpx;
+}
+.detail-warning{
+  font-size: 28rpx;
+  color: #777;
+  padding: 20rpx;
+}
+.bottombtn{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 5rpx solid #eee;
+}
+.sharebtn{
+  flex: 0 0 30%;
+}
+.entrybtn{
+  flex: 0 0 70%;
+  background: #a6eafd;
+}

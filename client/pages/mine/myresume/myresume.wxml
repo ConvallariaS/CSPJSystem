@@ -1,0 +1,78 @@
+<!--pages/mine/myresume/myresume.wxml-->
+<view class="container">
+  <view class="container-body resume-content">
+    <view class="group-header">基本信息</view>
+    <view class="group-body">
+      <view class="input-list">
+        <view class="input-item">
+          <text class="input-item-label">姓名</text>
+          <view class="input-item-content">
+            <text>{{resumename}}</text>
+          </view>
+        </view>
+        <view class="input-item">
+          <text class="input-item-label">电话号码</text>
+          <view class="input-item-content">
+            <text>{{resumephone}}</text>
+          </view>
+        </view>
+        <view class="input-item">
+          <text class="input-item-label">身份证号</text>
+          <view class="input-item-content">
+            <text>{{resumeIdcard}}</text>
+          </view>
+        </view>	
+      </view>
+    </view>
+
+    <view class="group-header">求职信息</view>
+    <view class="group-body">
+      <view class="input-list">
+        <view class="input-item">
+          <text class="input-item-label">求职城市</text>
+          <text>{{pickercity}}</text>
+        </view>
+        <view class="input-item">
+          <text class="input-item-label">求职意向</text>
+          <text>{{pickerjob}}</text>
+        </view>		
+      </view>
+    </view>
+
+    <view class="group-header">学历信息</view>
+    <view class="group-body">
+      <view class="input-list">
+        <view class="input-item">
+          <text class="input-item-label">所属学校</text>
+          <text>{{pickercollege}}</text>
+        </view>
+        <view class="input-item">
+          <text class="input-item-label">最高学历</text>
+          <text>{{pickereducation}}</text>
+        </view>	
+        <view class="input-item">
+          <text class="input-item-label">入学时间</text>
+          <text>{{pickerdates}}</text>
+        </view>	
+      </view>
+    </view>
+
+    <view class="group-header">空闲时间</view>
+    <view class="group-body">
+      <view class="input-list">
+        <view class="input-item">
+        <text class="input-item-label">空闲时间</text>
+          <text>{{checkboxfreetime}}</text>
+        </view>	
+      </view>
+    </view>
+    <view class="group-body">
+      <view class="blanckview" />
+    </view>
+    <view class="group-body">
+      <view class="editview">
+        <button class="editbtn btn-green" bindtap="goToEdit">编辑</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+.welcomebgp{
+  width: 100%;
+  height: 1200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.journey-container{
+  margin-top: 200rpx;
+  border: 1px solid #EA5A3C;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 5px;
+  text-align:center;
+}
+.journey{
+  text-align: center;
+  font-size:22rpx;
+  font-weight: bold;
+  line-height:80rpx;
+  color: #EA5A3C;
+}
+.welcome-footer{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+}
+.welcome-footer__links{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-size: 32rpx;
+  color: #586c94;
+}
+.welcome-footer__text{
+  font-size: 28rpx;
+  color: #aea6a6;
+}

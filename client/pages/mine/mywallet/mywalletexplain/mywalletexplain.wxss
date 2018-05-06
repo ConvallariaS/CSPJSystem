@@ -1,0 +1,6 @@
+/* pages/mine/mywallet/mywalletexplain/mywalletexplain.wxss */
+.explainbgp{
+  width: 100%;
+  height: 1200rpx;
+  font-size: 42rpx;
+}

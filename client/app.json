@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/welcome/welcome",
+        "pages/home/home",
+        "pages/home/home-detail/home-detail",
+        "pages/home/home-detail/apply/apply",
+        "pages/mine/mine",
+        "pages/mine/myjob/myjob",
+        "pages/mine/mywallet/mywallet",
+        "pages/mine/mywallet/withdrawal/withdrawal",
+        "pages/mine/mywallet/mywalletset/mywalletset",
+        "pages/mine/mywallet/mywalletset/addbankcard/addbankcard",
+        "pages/mine/mywallet/mywalletset/addalipay/addalipay",
+        "pages/mine/mywallet/mywalletexplain/mywalletexplain",
+        "pages/mine/myresume/myresume",
+        "pages/mine/myresume/editresume/editresume"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#a6eafd",
+        "navigationBarTitleText": "大学生兼职系统",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+      "color": "#dddddd",
+      "selectedColor": "#3cc5ff",
+      "borderStyle": "black",
+      "backgroundColor": "#ffffff",
+      "position": "bottom",
+      "list": [
+        {
+          "pagePath": "pages/home/home",
+          "iconPath": "images/icon_shouye.png",
+          "selectedIconPath": "images/icon_shouye_.png",
+          "text": "主页"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "iconPath": "images/icon_wo.png",
+          "selectedIconPath": "images/icon_wo_.png",
+          "text": "我的"
+        }
+      ]
+    },
+    "networkTimeout": {
+      "request": 10000,
+      "connectSocket": 10000,
+      "uploadFile": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true
+}

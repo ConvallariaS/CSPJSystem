@@ -1,0 +1,24 @@
+<!--模板-->
+<!--job-item-tpl.wxml-->
+<template name="jobItemTpl">
+  <view class="info_items">
+    <view class="title_info">
+      <view class="info_title">
+        <text>{{title}}</text>
+      </view>
+      <view class="info_price" >
+        <text>{{price}}</text>
+      </view>
+    </view>
+    <view class="basic_info">
+      <view class="info_addr">
+        <image class="image_addr" src="../../images/icon_addr.png" mode="aspectFit"></image>
+        <text>{{addr}}</text>
+      </view>
+      <view class="info_time">
+        <image class="image_time" src="../../images/icon_time.png" mode="aspectFit"></image>
+        <text>{{time}}</text>
+      </view>        
+    </view>
+  </view>
+</template>

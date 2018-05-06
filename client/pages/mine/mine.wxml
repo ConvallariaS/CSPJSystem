@@ -1,0 +1,32 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view id="header" style="background-image: url('https://background-images-1255871272.coscd.myqcloud.com/yumao.jpg');background-size: contain">
+    <!--登录-->
+    <view class="content" bindtap="goLogined">
+    	<image src="{{userImg}}" wx:if="{{userImg}}"></image>
+      <image src="../../images/defaultuser.png" wx:else></image>
+      <view class="nickname">{{userName || '去登录'}}</view>
+    </view>
+  </view>
+  <!--几个功能-->
+  <view class="list">
+    <view class="my-item" bindtap="isGoMyJob">
+      <image class="image1" src="../../images/icon_jianzhi.png" mode="aspectFit"></image>
+		  <text>我的兼职</text>
+      <image class="you" src="../../images/xiangyou1.png" mode="aspectFit"></image>
+    </view>
+
+    <view class="my-item" bindtap="isGoMyWallet">
+      <image class="image1" src="../../images/icon_wallet.png" mode="aspectFit"></image>
+		  <text>我的钱包</text>
+      <image class="you" src="../../images/xiangyou1.png" mode="aspectFit"></image>
+    </view>
+  
+    <view class="my-item" bindtap="isGoMyResume">
+      <image class="image1" src="../../images/icon_resume.png" mode="aspectFit"></image>
+		  <text>我的简历</text>
+      <image class="you" src="../../images/xiangyou1.png" mode="aspectFit"></image>
+    </view>
+
+  </view>
+</view>

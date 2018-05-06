@@ -1,0 +1,100 @@
+/* pages/mine/myresume/editresume/editresume.wxss */
+.group{
+  display: block;
+  width: 100%;
+}
+.group-header{
+  line-height: 70rpx;
+  display: flex;
+  padding: 0 20rpx;
+  background: #f9f9f9;
+}
+.group-header::before{
+  content: '';
+	display: inline-block;
+	vertical-align: -6rpx;
+	width: 10rpx;
+	height: 70rpx;
+	background: #07fb42;
+	margin-right: 8rpx;
+}
+.group-body{
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+.btn-green{
+  background: #a6eafd;
+  color: #fff;
+}
+.weui-cells{
+  position:relative;
+  margin-top:1.17647059em;
+  background-color:#fff;
+  line-height:1.41176471;
+  font-size:17px;
+} 
+.weui-cells_after-title{
+  margin-top:0;
+}
+.weui-grids{
+  position: relative;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.weui-grids::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.weui-grids::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-left: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+}
+.weui-grid{
+  position: relative;
+  float: left;
+  padding: 20px 10px;
+  width: 25%;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #eee;
+}
+.weui-grid::before{
+  content: " ";
+}
+.weui-check{
+  position: absolute;
+  left: -9999px;
+}
+.weui-check__hd_in-checkbox{
+ padding-right: .35em;
+}
+.weui-icon-checkbox_circle,.weui-icon-checkbox_success{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.weui-cell__bd{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}

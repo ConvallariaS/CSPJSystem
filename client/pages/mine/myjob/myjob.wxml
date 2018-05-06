@@ -1,0 +1,49 @@
+<!--pages/mine/myjob/myjob.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab == 0 ? 'on' : '' }}" data-current="0" bindtap="swichNav">申请报名</view>
+    <view class="swiper-tab-list {{currentTab == 1 ? 'on' : '' }}" data-current="1" bindtap="swichNav">进行中的</view>
+    <view class="swiper-tab-list {{currentTab == 2 ? 'on' : '' }}" data-current="2" bindtap="swichNav">待支付的</view>
+    <view class="swiper-tab-list {{currentTab == 3 ? 'on' : '' }}" data-current="3" bindtap="swichNav">已结束的</view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item class="apply-swiper-item">
+      <scroll-view class="applyview" scroll-x="false" scroll-y="true">
+        <view class="applyjob" hidden="{{isjob}}">
+          <view>你还没有申请工作哦，快去申请吧</view>
+        </view>
+        <view class="joblist" hidden="{{!isjob}}">
+          <block wx:for="{{job}}" wx:key="">
+            <view class="applyjob_item" bindtap="applyJobDelete">
+              <view class="title_info">
+                <view class="info_title">
+                  <text>{{item.title}}</text>
+                </view>
+                <view class="info_price" >
+                  <text>{{item.price}}</text>
+                </view>
+              </view>
+              <view class="basic_info">
+                <view class="info_addr">
+                  <text>{{item.detailedAddress}}</text>
+                </view>
+                <view class="info_time">
+                  <text>{{item.time}}</text>
+                </view>        
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <view>进行中的</view>
+    </swiper-item>
+    <swiper-item>
+      <view>待支付的</view>
+    </swiper-item>
+    <swiper-item>
+      <view>已结束的</view>
+    </swiper-item>
+  </swiper>
+</view>

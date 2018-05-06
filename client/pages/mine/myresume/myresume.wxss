@@ -1,0 +1,45 @@
+/* pages/mine/myresume/myresume.wxss */
+.container-body{
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.resume-content{
+  background: #f9f9f9;
+}
+.blanckview{
+  height: 30rpx;
+  width: 100%;
+}
+.group-header{
+  line-height: 70rpx;
+  display: flex;
+  padding: 0 20rpx;
+  background: #f9f9f9;
+}
+.group-header::before{
+  content: '';
+	display: inline-block;
+	vertical-align: -6rpx;
+	width: 10rpx;
+	height: 70rpx;
+	background: #07fb42;
+	margin-right: 8rpx;
+}
+.group-body{
+  background: #fff;
+  margin-bottom: 20rpx;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+.editview{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 5rpx solid #eee;
+}
+
+.btn-green{
+  background: #a6eafd;
+  color: #fff;
+}

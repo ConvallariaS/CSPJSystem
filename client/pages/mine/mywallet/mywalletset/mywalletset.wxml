@@ -1,0 +1,18 @@
+<!--pages/mine/mywallet/mywalletset/mywalletset.wxml-->
+<view class="container">
+  <view class="walletset">
+    <button class="item1 green" bindtap="jumpToAddBankCard">添加银行卡</button>
+    <button class="item2 green" bindtap="jumpToAddAlipay">添加支付宝</button>
+  </view>
+
+    <view class="bankcard_info">
+      <view class="flag1">银</view>
+      <view class="cardname">{{cardlist.cardname1}}</view>
+      <view class="cardnum">{{cardlist.cardnum1}}</view>
+    </view>
+    <view class="alipay_info">
+      <view class="flag2">支</view>
+      <view class="cardname">{{alipaylist.alipayname1}}</view>
+      <view class="cardnum">{{alipaylist.alipayphone1}}</view>
+    </view>
+</view>

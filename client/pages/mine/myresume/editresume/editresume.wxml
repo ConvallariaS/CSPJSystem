@@ -1,0 +1,90 @@
+<!--pages/mine/myresume/editresume/editresume.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="group">
+      <view class="group-header">基本信息</view>
+      <view class="group-body">
+        <view class="input-list">
+          <view class="input-item">
+            <text class="input-item-label">姓名</text>
+            <view class="input-item-content">
+              <input type="text" placeholder="请输入您的姓名（中文）" maxlength="10" value="{{resumename}}" bindchange="updateResumeName" name="resumename" ></input>
+            </view>
+          </view>
+          <view class="input-item">
+            <text class="input-item-label">电话号码</text>
+            <view class="input-item-content">
+              <input type="number" placeholder="请输入11位电话号码" maxlength="11" value="{{resumephone}}" bindchange="updateResumePhone" name="resumephone" ></input>
+            </view>
+          </view>
+          <view class="input-item">
+            <text class="input-item-label">身份证号</text>
+            <view class="input-item-content">
+              <input type="idcard" placeholder="请输入18位身份证号码" maxlength="18" value="{{resumeIdcard}}" bindchange="updateResumeIdCard" name="resumeIdcard"></input>
+            </view>
+          </view>	
+        </view>
+      </view>
+
+      <view class="group-header">求职信息</view>
+      <view class="group-body">
+        <view class="input-list">
+          <view class="input-item">
+            <text class="input-item-label">求职城市</text>
+            <picker class="input-item-content" bindchange="bindRegionPickerChange" data-pickername="city" value="{{region}}" custom-item="{{customItem}}" mode="region" name="pickercity">{{region[0]}},{{region[1]}},{{region[2]}}
+            </picker>
+          </view>
+          <view class="input-item">
+            <text class="input-item-label">求职意向</text>
+            <picker class="input-item-content" bindchange="bindJobPickerChange" data-pickername="job" value="{{jobindex}}" range="{{jobarr}}" mode="selector" name="pickerjob">{{jobarr[jobindex]}}
+            </picker>
+          </view>		
+        </view>
+      </view>
+
+      <view class="group-header">学历信息</view>
+      <view class="group-body">
+        <view class="input-list">
+          <view class="input-item">
+            <text class="input-item-label">毕业学校</text>
+            <picker class="input-item-content" bindchange="bindCollegePickerChange" data-pickername="college" value="{{collegeindex}}" range="{{collegearr}}" mode="selector" name="pickercollege">{{collegearr[collegeindex]}}
+            </picker>
+          </view>
+          <view class="input-item">
+            <text class="input-item-label">最高学历</text>
+            <picker class="input-item-content" bindchange="bindEducationPickerChange" data-pickername="education" value="{{educationindex}}" range="{{educationarr}}" mode="selector" name="pickereducation">{{educationarr[educationindex]}}
+            </picker>
+          </view>	
+          <view class="input-item">
+            <text class="input-item-label">入学时间</text>
+            <picker class="input-item-content" bindchange="bindDatesPickerChange" data-pickername="dates" value="{{dates}}" start="1990-01-01" end="2018-12-31" mode="date" name="pickerdates">{{dates}}
+            </picker>
+          </view>	
+        </view>
+      </view>
+
+      <view class="group-header">空闲时间</view>
+      <view class="group-body">
+        <view class="input-list">
+          <view class="weui-grids">
+            <checkbox-group bindchange="checkboxChange" name="checkboxfreetime">
+              <label class="weui-grid" wx:for="{{checkboxItems}}" wx:key="value">
+                <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+                <view class="weui-check__hd_in-checkbox">
+                  <icon class="weui-icon-checkbox_circle" type="circle" size="16" wx:if="{{!item.checked}}"></icon>
+                  <icon class="weui-icon-checkbox_success" type="success" size="16" wx:if="{{item.checked}}"></icon>
+                </view>
+                <view class="weui-cell__bd">{{item.name}}</view>
+              </label>
+            </checkbox-group>
+          </view>	
+        </view>
+      </view>
+    </view>
+
+    <view style="display: flex; justify-content: space-between;">
+      <button class="btn-block btn-green" form-type="submit" type="primary">保存</button>
+      <button class="btn-block btn-green" form-type="reset">重置</button>
+    </view>
+  </form>
+</view>
